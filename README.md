@@ -25,14 +25,15 @@ A full-stack **E-commerce platform** built using the **MERN stack** (MongoDB, Ex
 
 ### **Frontend:**
 - **ReactJS**: For building a dynamic and responsive user interface.
-- **Redux**: For state management across the application.
+- **TailwindCSS**: For design beautiful user interface.
 
 ### **Backend:**
 - **NodeJS**: For building a scalable server-side application.
 - **ExpressJS**: For creating RESTful APIs.
+- **Radis**: Redis is used as an in-memory cache to optimize performance by storing frequently accessed data.
 
 ### **Database:**
-- **MongoDB**: For storing user, product, and order data.
+- **MongoDB**: For storing user, product, order and other data.
 
 ### **Payment Integration:**
 - **Stripe API**: For secure and efficient payment processing.
@@ -52,7 +53,6 @@ Follow these steps to set up the project locally:
 2. **Install Dependencies**:
    - For the backend:
      ```bash
-     cd backend
      npm install
      ```
    - For the frontend:
@@ -62,27 +62,39 @@ Follow these steps to set up the project locally:
      ```
 
 3. **Set Up Environment Variables**:
-   - Create a `.env` file in the `backend` directory and add the following:
+   - Create a `.env` file in the main directory and add the following:
      ```
-     MONGO_URI=your_mongodb_connection_string
-     JWT_SECRET=your_jwt_secret
-     STRIPE_SECRET_KEY=your_stripe_secret_key
+      PORT=5000
+      MONGO_URI=
+
+      UPSTASH_REDIS_URL=
+
+      ACCESS_TOKEN_SECRET=
+      REFRESH_TOKEN_SECRET=
+
+      CLOUDINARY_CLOUD_NAME=
+      CLOUDINARY_API_KEY=
+      CLOUDINARY_API_SECRET=
+
+      STRIPE_SECRET_KEY=
+
+      CLIENT_URL=http://localhost:5173
+      NODE_ENV=development
      ```
 
 4. **Run the Application**:
    - Start the backend server:
      ```bash
-     cd backend
-     npm start
+     npm run dev
      ```
    - Start the frontend development server:
      ```bash
      cd frontend
-     npm start
+     npm run dev
      ```
 
 5. **Access the Application**:
-   - Open your browser and navigate to `http://localhost:3000`.
+   - Open your browser and navigate to `http://localhost:5173/`.
 
 ---
 
