@@ -6,7 +6,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import axios from "../lib/axios";
 
 const stripePromise = loadStripe(
-	"pk_test_51R2aB87LAwbj8mettPW3WkNeBibl2sAACTKfxocF8qcJSI6eG8dFPOR2Jee2HJxB5rCiQKOATUePWcOb39nlVonf00mkSn7x6w"
+	paste your STRIPE_PUBLISHABLE_KEY here . //pk_test_..........
 );
 
 const OrderSummary = () => {
