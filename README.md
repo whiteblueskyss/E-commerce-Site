@@ -80,6 +80,8 @@ Follow these steps to set up the project locally:
 
       CLIENT_URL=http://localhost:5173
       NODE_ENV=development
+
+      // udpdate orderSummaryPage.jsx with our own STRIPE_PUBLISHABLE_KEY;
      ```
 
 4. **Run the Application**:
